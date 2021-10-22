@@ -21,9 +21,9 @@ function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${links.github}`
 
   fetch(url)
-    .then(response => {
+    .then(response => 
       response.json()
-    })
+    )
     .then(data => {
       userName.textContent = data.name
       userBio.textContent = data.bio
